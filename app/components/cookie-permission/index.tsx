@@ -15,13 +15,13 @@ const CookiePermission = ({ onDeclineAll, onAcceptAll, onCustomCookie }: CookieP
                 <p className="text-sm text-neutral-600 mt-1">
                     We use cookies to enhance your browsing experience and improve our website &apos; s performance.
                     By continuing to use this site, you consent to the use of cookies. To learn more about how we use cookies and your options, please read our
-                    {" "}<a className="text-indigo-700 underline" href="#">cookie policy</a>.
+                    {" "}<a className="text-indigo-700 lg:underline" href="#">cookie policy</a>.
                 </p>
                 <div className="flex md:flex-row flex-col justify-between items-center mt-6 gap-2 self-stretch">
-                    <Button content="Decline all" styling="tertiary" className="w-full md:w-auto" onClick={onDeclineAll} />
+                    <Button content="Decline all" styling="tertiary" className="w-full md:w-auto !py-[7px] md:order-first order-last" onClick={onDeclineAll} />
                     <div className="flex md:flex-row flex-col md:gap-4 gap-2 self-stretch">
-                        <Button content="Allow cookies" styling="primary" onClick={onAcceptAll} />
-                        <Button content="Manage cookies" styling="secondary" onClick={onCustomCookie} />
+                        <Button content="Allow cookies" styling="primary" onClick={onAcceptAll} className="md:order-1 order-first"/>
+                        <Button content="Manage cookies" styling="secondary" onClick={onCustomCookie} className="md:order-last order-1"/>
                     </div>
                 </div>
             </div>

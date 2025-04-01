@@ -2,7 +2,7 @@ import { Noto_Sans, Inter } from "next/font/google";
 
 const notoFont = Noto_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -11,6 +11,5 @@ const interFont = Inter({
   weight: ["400", "500", "700"],
   display: "swap",
 });
-
 
 export { notoFont, interFont };
