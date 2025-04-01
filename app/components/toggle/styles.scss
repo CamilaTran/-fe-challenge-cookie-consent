@@ -1,0 +1,23 @@
+.ant-switch {
+  &[aria-checked="false"] {
+    background-color: #e5e7eb !important;
+    &:hover {
+      background-color: #d1d5db !important;
+    }
+  }
+
+  &[aria-checked="true"] {
+    background-color: #4338ca !important;
+
+    &:hover {
+      background-color: #3730a3 !important;
+    }
+  }
+
+  .ant-switch-handle {
+    &::before {
+      width: 1rem !important;
+      height: 1rem !important;
+    }
+  }
+}
